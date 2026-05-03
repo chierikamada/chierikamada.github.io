@@ -19,15 +19,15 @@ interface ProjectTileProps {
 export default function ProjectTile({title, imageSrc, description, skills, link}: ProjectTileProps) {
     return (
         <Card className="w-4xl">
-            <CardTitle className="px-4 text-lg">{title}</CardTitle> 
+            <CardTitle className="px-4 text-xl">{title}</CardTitle> 
             <CardContent className="flex flex-row gap-6">
                 <img src={imageSrc} alt={title} className="flex-1"/>
                 <div className="flex-3 flex flex-col gap-4">
-                    <div className="description">
+                    <div>
                         <p>{description}</p>
                     </div>
-                    <div className="skills">
-                        Skills {skills.map((skill: string) => <Badge variant="secondary" key={skill}>{skill}</Badge>)}
+                    <div className="flex flex-row gap-1">
+                        {skills.map((skill: string) => <Badge variant="secondary" className="rounded-sm font-bold" key={skill}>{skill}</Badge>)}
                     </div>
                     {link && <Button asChild className="w-[60px]">
                         <a href={link}>
