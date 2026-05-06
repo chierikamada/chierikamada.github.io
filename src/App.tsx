@@ -2,6 +2,7 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import ProjectTile from '@/components/ProjectTile'
 import HobbyTile from '@/components/HobbyTile'
+import ResumeView from '@/views/ResumeView'
 import reactLogo from '@/assets/react.svg'
 import viteLogo from '@/assets/vite.svg'
 import cat from '@/assets/cat.jpeg'
@@ -41,6 +42,16 @@ function App() {
           skills={["Vite"]}
           link="coolproject2.com"
          />
+
+        <ResumeView 
+          title="Professional Experience"
+          resumes={[{title:"Chief Executive Intern",
+          company:"ABC Inc.",
+          start:"May 2023",
+          end:"May 2026",
+          bullets:["Increased company's productivity by 50%", "Fired all of the AI bots improving employee satisfaction by 6 points", "Rescued 36 stray cats"],
+          skills:["React", "TypeScript", "Vite"]}]}
+        />
 
         <HobbyTile 
           imageSrc={cat}
