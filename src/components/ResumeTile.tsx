@@ -15,7 +15,7 @@ export interface ResumeTileProps {
 
 export default function ResumeTile({title, company, start, end, bullets, skills}: ResumeTileProps) {
     return (
-        <Item className="w-3xl">
+        <Item className="w-[52rem]">
             <ItemContent className="">
                 <div className="flex flex-row justify-between">
                     <div className="text-lg">{title}</div> 
@@ -26,7 +26,7 @@ export default function ResumeTile({title, company, start, end, bullets, skills}
                     {bullets.map((bullet: string) => <li>{bullet}</li>)}
                 </ul>
                 <div className="flex flex-row gap-1 mt-2">
-                    {skills.map((skill: string) => <Badge variant="secondary" className="rounded-sm font-bold" key={skill}>{skill}</Badge>)}
+                    {skills.map((skill, index) => <Badge variant="secondary" className="rounded-sm font-bold" key={index}>{skill}</Badge>)}
                 </div>    
             </ItemContent>
         </Item>

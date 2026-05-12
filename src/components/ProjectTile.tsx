@@ -7,7 +7,7 @@ import {Button} from "@/components/ui/button"
 import {Badge} from "@/components/ui/badge"
 import {SquareArrowOutUpRight} from "lucide-react"
 
-interface ProjectTileProps {
+export interface ProjectTileProps {
     title: string; 
     imageSrc: any; 
     description: string;
@@ -20,8 +20,8 @@ export default function ProjectTile({title, imageSrc, description, skills, link}
     return (
         <Card className="w-4xl">
             <CardTitle className="px-4 text-xl">{title}</CardTitle> 
-            <CardContent className="flex flex-row gap-6">
-                <img src={imageSrc} alt={title} className="flex-1"/>
+            <CardContent className="flex flex-row gap-6 items-center">
+                <img src={imageSrc} alt={title} className="flex-1 p-2"/>
                 <div className="flex-3 flex flex-col gap-4">
                     <div>
                         <p>{description}</p>
