@@ -1,13 +1,17 @@
-import cat from '@/assets/cat.jpeg'
+import headshot from '@/assets/headshot.png'
+import lines from '@/assets/lines.png'
 
 export default function Intro() {
     return (
-        <div className="w-4xl mt-14 px-4 flex flex-row items-center">
-            <div className="flex-3">
-                <div className="font-serif text-5xl tracking-normal">Hi there, I'm Chieri!</div>
-                <div>Scroll down to learn more about me...</div>
-            </div>
-            <img src={cat} alt="cat" className="flex-2 min-w-0 w-0 object-cover"/>
+        <div className="w-[68rem] h-[40rem] mt-12 px-4 relative">
+            <img src={lines} alt="lines" className="absolute w-sm right-0 top-0"/>
+            <div className="pt-30">
+                <img src={headshot} alt="chieri's headshot" className="w-2xl object-cover"/>
+                <div className="absolute top-[30%] left-[42%]">
+                    <div className="font-serif text-6xl tracking-normal">Hi there, <br/>I'm Chieri!</div>
+                    <div className="mt-4 font-serif" >Full-Stack Engineer | Flight Test & Telemetry | Code, Craft, Create</div>
+                </div>
+            </div>    
         </div>
     )
 }

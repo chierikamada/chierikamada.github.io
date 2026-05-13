@@ -17,8 +17,8 @@ export default function ProjectView({projects}: ProjectViewProps) {
     return (
         <div className="w-[60rem]">
             <div className="text-3xl mx-4 my-2 font-serif">Projects</div>
-            <hr className="border-t-2"/>
-            <Carousel className="ml-14 mt-4">
+            <hr className="border-t-2 border-(--primary)"/>
+            <Carousel className="ml-14 mt-4" opts={{loop: true}}>
                 <CarouselContent>
                     {projects.map((project, index) => 
                     <CarouselItem key={index}>

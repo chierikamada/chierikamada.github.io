@@ -10,7 +10,7 @@ export default function ResumeView({ title, resumes } : ResumeViewProps) {
         <>
         <div className="w-[60rem]">
             <div className="text-3xl mx-4 my-2 font-serif">{title}</div>
-            <hr className="border-t-2"/>
+            <hr className="border-t-2 border-(--primary)"/>
             <div className="mx-[3rem]">
                 {resumes.map((resume, index) => {
                     return (

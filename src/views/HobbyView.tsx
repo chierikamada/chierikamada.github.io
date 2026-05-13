@@ -8,7 +8,7 @@ export default function HobbyView({hobbies}: HobbyTileProps) {
     return (
         <div className="w-[60rem]">
             <div className="text-3xl mx-4 my-2 font-serif">The Fun Stuff</div>
-            <hr className="border-t-2"/>
+            <hr className="border-t-2 border-(--primary)"/>
             <div className="text-sm mx-4 my-2">Here are some of the things I enjoy doing in my free time...</div>
             <div className="grid grid-cols-[auto_auto_auto] gap-8 justify-center">
                 {hobbies.map((hobby) => <HobbyTile {...hobby}></HobbyTile>)}

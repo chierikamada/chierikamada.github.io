@@ -19,14 +19,14 @@ export default function ResumeTile({title, company, start, end, bullets, skills}
             <ItemContent className="">
                 <div className="flex flex-row justify-between">
                     <div className="text-lg">{title}</div> 
-                    <div className="text-xs">{start} - {end}</div>
+                    <div className="text-sm">{start} - {end}</div>
                 </div>
                 <div className="text-sm opacity-75">{company}</div>
-                <ul className="list-disc mx-4">
+                <ul className="list-disc mx-4 text-sm">
                     {bullets.map((bullet: string) => <li>{bullet}</li>)}
                 </ul>
                 <div className="flex flex-row gap-1 mt-2">
-                    {skills.map((skill, index) => <Badge variant="secondary" className="rounded-sm font-bold" key={index}>{skill}</Badge>)}
+                    {skills.map((skill, index) => <Badge variant="secondary" className="rounded-sm" key={index}>{skill}</Badge>)}
                 </div>    
             </ItemContent>
         </Item>

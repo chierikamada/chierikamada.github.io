@@ -49,20 +49,20 @@
 
 /* TODO: Switch to oklch */
 .dark {
-    --background: #001f48;
-    --foreground: oklch(0.985 0 0);
-    --card: #0C2D57;
-    --card-foreground: oklch(0.985 0 0);
+    --background: #0f2c57;
+    --foreground: #EFECEC;
+    --card: oklch(0.7 0 0 / 17%);
+    --card-foreground: #EFECEC;
     --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: #FFB0B0;
-    --primary-foreground: #0C2D57;
-    --secondary: oklch(0.9454 0.0032 17.22 / 75%);
-    --secondary-foreground: #0C2D57;
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: #EF6728;
-    --accent-foreground: #EFECEC;
+    --popover-foreground: #EFECEC;
+    --primary: #feb0b0;
+    --primary-foreground: #0f2c57;
+    --secondary: #1679ab;
+    --secondary-foreground: #EFECEC;
+    --muted: oklch(0.9454 0.0032 17.22 / 75%);
+    --muted-foreground: #0C2D57;
+    --accent: #fdcac9;
+    --accent-foreground: #0C2D57;
     --destructive: oklch(0.704 0.191 22.216);
     --border: oklch(1 0 0 / 10%);
     --input: oklch(1 0 0 / 15%);
