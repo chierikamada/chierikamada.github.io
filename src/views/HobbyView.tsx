@@ -48,8 +48,7 @@ export default function HobbyView() {
             <hr className="border-t-2 border-(--primary)"/>
             <div className="text-sm mx-4 my-2">A few of my favorite things</div>
             <div className="mt-6 grid grid-cols-[auto_auto_auto] gap-8 justify-center">
-                {hobbies.map((hobby, i) => <HobbyTile {...hobby} className="animate-fadeInUp opacity-0"
-    style={{ animationDelay: `${i * 100}ms`}}></HobbyTile>)}
+                {hobbies.map((hobby) => <HobbyTile{...hobby} ></HobbyTile>)}
             </div>
         </div>
 
