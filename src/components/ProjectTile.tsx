@@ -21,9 +21,9 @@ export default function ProjectTile({title, imageSrc, description, skills, link}
         <Card className="w-4xl">
             <CardTitle className="px-4 text-xl">{title}</CardTitle> 
             <CardContent className="flex flex-row gap-6">
-                <img src={imageSrc} alt={title} className="flex-1 p-2"/>
+                <img src={imageSrc} alt={title} className="flex-2 min-w-0 w-0 object-contain self-start"/>
                 <div className="flex-3 flex flex-col gap-4">
-                    <div className="text-sm">
+                    <div className="">
                         <p>{description}</p>
                     </div>
                     <div className="flex flex-row gap-1">

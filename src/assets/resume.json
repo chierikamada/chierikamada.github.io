@@ -1,0 +1,55 @@
+[
+    {
+      "title": "Software Engineer, Test and Telemetry",
+      "company": "Boom Supersonic",
+      "start": "February 2025",
+      "end": "Present",
+      "bullets": [
+        "Developed Telviz, Boom's real-time telemetry visualization system used across 15 hardware system test events so far, as the primary contributor",
+        "Enhanced Go backend server, orchestrating concurrent processes using channels and asynchronous patterns",
+        "Built a custom Web Components frontend enabling users to configure screens for monitoring real-time test data",
+        "Collaborated with stakeholders to define test visualization requirements and delivered components including plots, gauges, and indication lights",
+        "Developed hardware commanding features (valves, pumps, and more) using representative switches and knobs rendered in browser, with a key checkout mechanism to restrict control to one user at a time",
+        "Automated post-test data uploads and processing, reducing data availability from 1.5 hours to under 20 minutes"
+    ],
+      "skills": ["Go", "TypeScript", "Web Components (Lit)", "HTML/CSS"]
+    },
+    {
+      "title": "Avionics Flight Test Engineer",
+      "company": "Boom Supersonic",
+      "start": "July 2024",
+      "end": "February 2025",
+      "bullets": [
+        "Served as responsible engineer in the XB-1 (Boom's supersonic demonstrator aircraft) flight test control room, monitoring and troubleshooting avionics and telemetry systems during flight test events",
+        "Analyzed post-event data and presented findings at program data reviews, with actionable recommendations for subsequent missions",
+        "Updated aircraft data retrieval and processing scripts, simplifying the workflow and reducing turnaround time",
+        "Extended XB-1's MATLAB flight data analysis suite with new visualization features"
+      ],
+      "skills": ["Flight Test", "C++", "MATLAB"]
+    },
+    {
+      "title": "Avionics Design Engineer",
+      "company": "Boom Supersonic",
+      "start": "June 2023",
+      "end": "July 2024",
+      "bullets": [
+        "Led ATA 31, 34, and 46 systems development in preparation for the Overture Design Readiness Review",
+        "Authored system Concept of Operation, Technical Requirements, and Statement of Work documentation",
+        "Contributed to Flight Deck maturation and ARP-4754B process and V&V tooling across multiple working groups",
+        "Designed and developed flyable Primary and Multi-Function Displays for the Overture POD Simulator using GL Studio"
+      ],
+      "skills": ["Avionics", "Systems Engineering", "Human Factors"]
+    },
+    {
+      "title": "Avionics Systems Intern",
+      "company": "Honda Aircraft Company",
+      "start": "May 2022",
+      "end": "August 2022",
+      "bullets": [
+        "Designed a breakout box integrating three standby displays into an avionics test bench, directly supporting supplier selection",
+        "Performed Safety of Flight software testing to support verification of a new avionics software release",
+        "Collaborated with suppliers and test pilots to develop a concept of operations and UI for a new Autobrake system"
+      ],
+      "skills": []
+    }
+  ]

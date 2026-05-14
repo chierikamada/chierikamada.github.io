@@ -15,14 +15,14 @@ export interface ResumeTileProps {
 
 export default function ResumeTile({title, company, start, end, bullets, skills}: ResumeTileProps) {
     return (
-        <Item className="w-[52rem]">
+        <Item className="w-[58rem]">
             <ItemContent className="">
                 <div className="flex flex-row justify-between">
-                    <div className="text-lg">{title}</div> 
+                    <div className="text-[1.0rem]">{title}</div> 
                     <div className="text-sm">{start} - {end}</div>
                 </div>
                 <div className="text-sm opacity-75">{company}</div>
-                <ul className="list-disc mx-4 text-sm">
+                <ul className="list-disc mx-4 text-[0.8rem]">
                     {bullets.map((bullet: string) => <li>{bullet}</li>)}
                 </ul>
                 <div className="flex flex-row gap-1 mt-2">

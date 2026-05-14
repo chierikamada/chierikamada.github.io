@@ -29,22 +29,26 @@ export default function NavigationBar() {
     }
 
     useEffect(() => {
-        // Set up IntersectionObserver for each section
-        const observers: IntersectionObserver[] = [];
-        navItems.forEach(({href}) => {
-            const el = document.getElementById(href);
-            if (!el) return;
-
-            const observer = new IntersectionObserver(([entry]) => {
-                if (entry.isIntersecting) setActiveSection(href);
-            }, {threshold: 0.3});
-
-            observer.observe(el);
-            observers.push(observer);
-        });
-
-        return () => observers.forEach((o) => o.disconnect());
-    });
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const offset = 200;
+        
+            // Find the last section whose top is at or above the current scroll position
+            const current = navItems
+              .map(({ href }) => {
+                const el = document.getElementById(href);
+                return { href, top: el ? el.offsetTop - offset : Infinity };
+              })
+              .filter(({ top }) => top <= scrollY)
+              .at(-1); // the last one that's been scrolled past
+        
+            if (current) setActiveSection(current.href);
+          };
+        
+          window.addEventListener("scroll", handleScroll, { passive: true });
+          handleScroll(); // run once on mount to set initial state
+          return () => window.removeEventListener("scroll", handleScroll);
+    },[]);
 
     const handleClick = (e: React.MouseEvent, href: string) => {
         e.preventDefault();
@@ -64,7 +68,7 @@ export default function NavigationBar() {
                             px-4 py-2 rounded-md text-sm font-medium transition-all duration-200
                             ${activeSection === href
                             ? "underline underline-offset-4 decoration-2 decoration-(--secondary) text-(--foreground)"
-                            : "text-slate-400 hover:text-(--accent-foreground)"
+                            : "text-slate-400 hover:text-(--foreground)"
                             }
                         `}
                     >    
