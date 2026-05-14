@@ -6,8 +6,8 @@ import HobbyView from '@/views/HobbyView'
 import NavigationBar from '@/components/NavigationBar'
 import ResumeView from '@/views/ResumeView'
 
-import website from '@/assets/personal_website.png'
-import testSynergy from '@/assets/testsynergy.png'
+import website from '@/assets/personal_website.webp'
+import testSynergy from '@/assets/testsynergy.webp'
 
 import resumeData from '@/assets/resume.json'
 

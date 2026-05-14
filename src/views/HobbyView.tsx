@@ -1,10 +1,10 @@
 import HobbyTile, { type HobbyTileProps }  from '@/components/HobbyTile'
-import oril from '@/assets/oril.jpg'
-import lake from '@/assets/lake.jpg'
-import gopher from '@/assets/gopher.jpg'
-import coffee from '@/assets/coffee.jpg'
-import princess from '@/assets/princess.jpg'
-import pitviper from '@/assets/pitviper.jpg'
+import oril from '@/assets/oril.webp'
+import lake from '@/assets/lake.webp'
+import gopher from '@/assets/gopher.webp'
+import coffee from '@/assets/coffee.webp'
+import princess from '@/assets/princess.webp'
+import pitviper from '@/assets/pitviper.webp'
 
 
 const hobbies: HobbyTileProps[] = [

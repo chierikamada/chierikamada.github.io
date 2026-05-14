@@ -1,5 +1,5 @@
-import headshot from '@/assets/headshot.png'
-import lines from '@/assets/lines.png'
+import headshot from '@/assets/headshot.webp'
+import lines from '@/assets/lines.webp'
 
 export default function Intro() {
     return (
