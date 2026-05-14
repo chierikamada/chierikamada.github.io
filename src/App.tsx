@@ -18,7 +18,7 @@ function App() {
     <div>
         <NavigationBar />
         
-        <div className="flex flex-col items-center gap-10 mb-10">
+        <div className="flex flex-col items-center gap-10 mb-10 animate-fadeInUp">
           <section id="home">
             <Intro />
           </section>
