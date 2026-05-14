@@ -17,16 +17,16 @@ import {
 
 export default function NavigationBar() {
     const [activeSection, setActiveSection] = useState<string>("home");
-    const [dark, setDark] = useState<boolean>(true);
-    useEffect(() => {
-      document.documentElement.classList.toggle("dark", true);
-    }, []);
+    // const [dark, setDark] = useState<boolean>(true);
+    // useEffect(() => {
+    //   document.documentElement.classList.toggle("dark", true);
+    // }, []);
   
-    const toggleDark = () => {
-      const next = !dark;
-      setDark(next);
-      document.documentElement.classList.toggle("dark", next);
-    }
+    // const toggleDark = () => {
+    //   const next = !dark;
+    //   setDark(next);
+    //   document.documentElement.classList.toggle("dark", next);
+    // }
 
     useEffect(() => {
         const handleScroll = () => {

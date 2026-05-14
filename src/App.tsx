@@ -1,5 +1,4 @@
 import './App.css'
-import { useState, useEffect } from 'react'
 import Intro from '@/views/Intro'
 import About from '@/views/About'
 import ProjectView from '@/views/ProjectView'
@@ -7,10 +6,8 @@ import HobbyView from '@/views/HobbyView'
 import NavigationBar from '@/components/NavigationBar'
 import ResumeView from '@/views/ResumeView'
 
-import reactLogo from '@/assets/react.svg'
 import website from '@/assets/personal_website.png'
 import testSynergy from '@/assets/testsynergy.png'
-import cat from '@/assets/cat.jpeg'
 
 import resumeData from '@/assets/resume.json'
 
