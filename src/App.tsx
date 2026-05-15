@@ -28,10 +28,6 @@ function App() {
           </section>
 
           <section id="resume">
-            <ResumeView 
-              title="Professional Experience"
-              resumes={resumeData}
-            />
             <ResumeView
               title="Education"
               resumes={[
@@ -44,6 +40,10 @@ function App() {
                   skills: [],
                 },
               ]}
+            />
+            <ResumeView 
+              title="Professional Experience"
+              resumes={resumeData}
             />
           </section>
 
